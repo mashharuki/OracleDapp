@@ -14,11 +14,9 @@ contract PriceConsumerV3 {
      * Aggregator: ETH/USD
      * Address: 0xD4a33860578De61DBAbDc8BFdb98FD742fA7028e
      */
-    constructor() {
+    constructor(address _priceFeed) {
         // get AggregatorV3Interface contract
-        priceFeed = AggregatorV3Interface(
-            0xD4a33860578De61DBAbDc8BFdb98FD742fA7028e
-        );
+        priceFeed = AggregatorV3Interface(_priceFeed);
     }
 
     /**

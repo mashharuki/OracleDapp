@@ -33,12 +33,24 @@ forge test
 
 ```bash
 [⠢] Compiling...
-No files changed, compilation skipped
+[⠘] Compiling 3 files with 0.8.17
+[⠊] Solc 0.8.17 finished in 541.44ms
+Compiler run successful
+
+Running 1 test for test/PriceConsumerV3.test.sol:PriceConsumerV3Test
+[PASS] testGetPriceFeed() (gas: 19584)
+Test result: ok. 1 passed; 0 failed; finished in 3.03ms
 
 Running 2 tests for test/Counter.t.sol:CounterTest
 [PASS] testIncrement() (gas: 28356)
-[PASS] testSetNumber(uint256) (runs: 256, μ: 27409, ~: 28342)
-Test result: ok. 2 passed; 0 failed; finished in 9.27ms
+[PASS] testSetNumber(uint256) (runs: 256, μ: 27720, ~: 28342)
+Test result: ok. 2 passed; 0 failed; finished in 9.71ms
+```
+
+- install oracel modules
+
+```bash
+forge install smartcontractkit/chainlink-brownie-contracts
 ```
 
 ### Using Price Feeds
