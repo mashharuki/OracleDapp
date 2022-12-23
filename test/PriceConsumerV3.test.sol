@@ -18,6 +18,7 @@ contract PriceConsumerV3Test is Test {
      * setUp test
      */
     function setUp() public {
+        // create contract
         mockV3Aggregator = new MockV3Aggregator(DECIMALS, INITIAL_ANSWER);
         consumer = new PriceConsumerV3(address(mockV3Aggregator));
     }
